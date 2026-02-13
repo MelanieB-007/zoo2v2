@@ -1,0 +1,18 @@
+.logo {
+    width: 90px;
+    max-width: 115px;
+    padding-bottom: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .logo { width: 115px; }
+}
+
+@media (max-width: 767px) {
+    .logo-section {
+        grid-row: 2;
+        grid-column: 1;
+        order: 1;
+    }
+}
