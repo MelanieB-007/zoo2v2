@@ -167,6 +167,18 @@ body {
     width: auto;
 }
 
+.login-btn:hover, .hamburger:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(255, 140, 0, 0.5);
+}
+
+/* HAMBURGER */
+.hamburger {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    display: none;  /* Desktop hidden */
+}
+
 .right-section {
     grid-row: 2;
     grid-column: 2 / -1;
@@ -177,7 +189,7 @@ body {
 }
 
 /* BUTTONS/STYLES */
-.search, .login-btn, .lang-switcher {
+.login-btn, .lang-switcher, .hamburger {
     padding: 0.5rem 1rem;
     border: var(--border-header-button);
     background: var(--color-header-button-bg);
@@ -250,5 +262,15 @@ body {
     .graffiti-title {
         font-size: clamp(1.3rem, 4vw, 1.7rem);
         letter-spacing: 0.1em;
+    }
+
+    .hamburger {
+        display: block;
+        order: 3;
+        margin-left: auto;
+    }
+
+    .mobile-nav {
+        display: block;
     }
 }
