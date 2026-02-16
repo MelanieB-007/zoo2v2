@@ -21,14 +21,23 @@
             <h1 class="graffiti-title">Klub der tollen Tiere</h1>
         </div>
         <div class="right-section">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <button class="login-btn">Login</button>
             <select class="lang-switcher">
                 <option>DE</option>
                 <option>EN</option>
             </select>
-            <button class="hamburger" aria-label="Menü öffnen">
-                ☰
-            </button>
+            <label for="menu-toggle" class="hamburger" aria-label="Menü öffnen/schließen">☰</label>
+            <nav class="mobile-nav">
+                <label for="menu-toggle" class="close-btn" aria-label="Menü schließen">&times;</label>
+                <ul>
+                    <li><a href="#start">Start</a></li>
+                    <li><a href="#zoo">Zoo</a></li>
+                    <li><a href="#tiere">Tiere</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
