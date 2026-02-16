@@ -1,6 +1,6 @@
-@import "header.css";
 @import "main.css";
 @import "footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 
 * {
     box-sizing: border-box;
@@ -18,77 +18,66 @@
     --color-orange-dark: #e67e22;
     --color-green: #68B300;
 
-
     /* Allgemein */
-    --transition-all:                   all 0.3s;
-    --width-page:                       1200px;
-    --border-radius:                    20px;
-    --glass-blur:                       blur(10px);
-
-    --translateY:                       translateY(-10px);
-    --translateX:                       translateX(50%);
-    --cubic-bezier:                     cubic-bezier( 0.25, 0.46, 0.45, 0.94);
-
-    --color-glass-border:               rgba( 255, 255, 255, 0.3);
-    --glass-border:                     2pt solid var(--color-glass-border);
-
-    --color-shadow-soft:                rgba( 0, 0, 0, 0.12);
-    --shadow-soft:                      0 8px 32px var(--color-shadow-soft);
+    --transition-all: all 0.3s;
+    --width-page: 1200px;
+    --border-radius: 20px;
+    --glass-blur: blur(10px);
+    --translateY: translateY(-10px);
+    --translateX: translateX(50%);
+    --cubic-bezier: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --color-glass-border: rgba(255, 255, 255, 0.3);
+    --glass-border: 2pt solid var(--color-glass-border);
+    --color-shadow-soft: rgba(0, 0, 0, 0.12);
+    --shadow-soft: 0 8px 32px var(--color-shadow-soft);
 
     /* Header */
-    --gap-header:                       0.75rem;
-    --height-header:                    400px;
-
-    --color-header-bg:                  var(--zoo-orange);
-    --color-header-text:                #ffffff;
-    --font-weight-header-button:        500;
-    --font-size-header:                 0.9rem;
-
-    --color-header-button-text:         #ffffff;
-    --color-header-button-bg:           rgba( 255, 255, 255, 0.2);
-    --color-header-button-bg-hover:     rgba( 255, 255, 255, 0.1);
-    --color-header-button-shadow:       rgba( 255, 140, 0, 0.3);
-    --color-header-button-shadow-hover: rgba( 255, 140, 0, 0.5);
-    --color-header-button-border:       rgba( 255, 140, 0, 0.6);
-    --color-header-button-border-hover: rgba( 255, 165, 0, 1);
-    --color-header-button-border-focus: rgba( 255, 165, 0, 0.5);
-
-    --border-header-button:             1px solid var(--color-header-button-border);
-    --shadow-header-button:             0 2px 8px var(--color-header-button-shadow);
-    --shadow-header-button-hover:       0 4px 12px var(--color-header-button-shadow-hover);
-    --button-shadow-lang-focus:         0 0 0 3px var(--color-header-button-border-focus);
+    --gap-header: 0.75rem;
+    --height-header: 400px;
+    --color-header-bg: var(--zoo-orange);
+    --color-header-text: #ffffff;
+    --font-weight-header-button: 500;
+    --font-size-header: 0.9rem;
+    --color-header-button-text: #ffffff;
+    --color-header-button-bg: rgba(255, 255, 255, 0.2);
+    --color-header-button-bg-hover: rgba(255, 255, 255, 0.1);
+    --color-header-button-shadow: rgba(255, 140, 0, 0.3);
+    --color-header-button-shadow-hover: rgba(255, 140, 0, 0.5);
+    --color-header-button-border: rgba(255, 140, 0, 0.6);
+    --color-header-button-border-hover: rgba(255, 165, 0, 1);
+    --color-header-button-border-focus: rgba(255, 165, 0, 0.5);
+    --border-header-button: 1px solid var(--color-header-button-border);
+    --shadow-header-button: 0 2px 8px var(--color-header-button-shadow);
+    --shadow-header-button-hover: 0 4px 12px var(--color-header-button-shadow-hover);
+    --button-shadow-lang-focus: 0 0 0 3px var(--color-header-button-border-focus);
 
     /* Body */
-    --color-body-bg:                    linear-gradient(to bottom, var(--sky-blue), var(--primary-yellow));;
+    --color-body-bg: linear-gradient(to bottom, var(--sky-blue), var(--primary-yellow));
 
     /* Footer */
-    --height-footer:                    70px;
-    --font-weight-footer:               500;
-    --font-size-footer:                 0.875rem;
-
-    --color-footer-bg:                  linear-gradient(135deg, #ff8c00 0%, #ff6b35 50%, #68B300 100%);
-    --color-footer-bg-before:           #56a500;
-    --color-footer-text:                #ffffff;
-    --color-footer-shadow-box:          rgba( 3, 78, 162, 0.6);
-    --color-footer-shadow-text:         rgba( 0, 0, 0, 0.5);
-    --color-footer-shadow-text-mobile:  rgba( 0 ,0, 0, 0.7);
-    --color-footer-shadow-text-glow:    rgba( 3, 78, 162, 0.3);
-
-
+    --height-footer: 70px;
+    --font-weight-footer: 500;
+    --font-size-footer: 0.875rem;
+    --color-footer-bg: linear-gradient(135deg, #ff8c00 0%, #ff6b35 50%, #68B300 100%);
+    --color-footer-bg-before: #56a500;
+    --color-footer-text: #ffffff;
+    --color-footer-shadow-box: rgba(3, 78, 162, 0.6);
+    --color-footer-shadow-text: rgba(0, 0, 0, 0.5);
+    --color-footer-shadow-text-mobile: rgba(0, 0, 0, 0.7);
+    --color-footer-shadow-text-glow: rgba(3, 78, 162, 0.3);
     --shadow-footer-text: 1px 1px 0 #0e7a4a;
     --shadow-footer-text-glow: 0 0 6px rgba(104, 179, 0, 0.7);
     --shadow-footer-text-mobile: 0.8px 0.8px 0 #0e7a4a;
     --shadow-footer-box: 0 4px 16px rgba(104, 179, 0, 0.25);
 
     /* Main */
-    --color-main-bg:                    #DAE67F;
+    --color-main-bg: #DAE67F;
 
     /* Card */
-    --color-card-bg:                    #FFFFFF;
-    --color-card-hover:                 rgba( 0, 0, 0, 0.2);
-    --gap-card:                         1rem;
-    --max-width-card-col3:              360px;
-
+    --color-card-bg: #FFFFFF;
+    --color-card-hover: rgba(0, 0, 0, 0.2);
+    --gap-card: 1rem;
+    --max-width-card-col3: 360px;
     --height-card: 380px;
     --max-width-card: 300px;
     --max-width-card-col2: 280px;
@@ -96,9 +85,7 @@
     --color-card-bg: rgba(255,255,255,0.9);
     --color-card-header-bg: linear-gradient(135deg, #68B300, #56a500);
     --color-card-header-text: white;
-
     --shadow-card-hover: 0 12px 40px rgba(104,179,0,0.2);
-
 }
 
 body {
@@ -108,11 +95,160 @@ body {
     margin: 0;
     padding: 10px 0 0 0;
     min-height: 100vh;
-    background: linear-gradient(to bottom,
-    var(--sky-blue) 0%,
-    var(--primary-yellow) 70%,
-    var(--earth-brown) 100%);
+    background: linear-gradient(to bottom, var(--sky-blue) 0%, var(--primary-yellow) 70%, var(--earth-brown) 100%);
     font-family: system-ui, sans-serif;
     position: relative;
     z-index: 0;
+}
+
+.logo {
+    width: 90px;
+    max-width: 115px;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+/* HEADER MIT ORANGE-FIX */
+.header {
+    flex-shrink: 0;
+    padding: 1rem 1.5rem 0.5rem;
+    margin: 10px auto 5px auto;
+    width: 100%;
+    max-width: var(--width-page);
+    height: auto;
+    min-height: 120px;
+    z-index: 2000;
+
+    /* ORANGE & GLASSMORPHISM – HOHE PRIORITÄT */
+    background: var(--color-header-bg) !important;
+    background-color: var(--zoo-orange) !important;
+    backdrop-filter: var(--glass-blur);
+    border: var(--glass-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+
+    display: grid;
+    grid-template-columns: min-content 1fr auto;
+    grid-template-rows: auto auto;
+    gap: var(--gap-header);
+    align-items: start;
+}
+
+.logo-section {
+    grid-row: 1 / 3;
+    grid-column: 1;
+}
+
+.title-section {
+    grid-row: 1;
+    grid-column: 2;
+    margin: 0;
+}
+
+.graffiti-title {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.1rem);
+    line-height: 1;
+    margin: 0;
+    padding: 0.1rem 0;
+
+    /* Deine frühere grüne Farbe */
+    color: #68B300;  /* Frisches Grün – oder #048243 für dunkler */
+
+    /* Grüne 3D-Shadows (wie früher) */
+    text-shadow:
+            2px 2px 0 #0e7a4a,  /* Dunkler Grün */
+            4px 4px 0 #056d42,  /* Tiefer Grün */
+            6px 6px 0 #1a1a1a;  /* Schwarz für Tiefe */
+
+    letter-spacing: 0.2em;
+    text-align: center;
+    white-space: nowrap;     /* Neu: Zwingt eine Zeile */
+    width: auto;
+}
+
+.right-section {
+    grid-row: 2;
+    grid-column: 2 / -1;
+    display: flex;
+    gap: var(--gap-header);
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* BUTTONS/STYLES */
+.search, .login-btn, .lang-switcher {
+    padding: 0.5rem 1rem;
+    border: var(--border-header-button);
+    background: var(--color-header-button-bg);
+    color: var(--color-header-button-text);
+    border-radius: 8px;
+    font-size: var(--font-size-header);
+    font-weight: var(--font-weight-header-button);
+    transition: var(--transition-all);
+    backdrop-filter: var(--glass-blur);
+}
+
+.login-btn:hover {
+    background: var(--color-header-button-bg-hover);
+    box-shadow: var(--shadow-header-button-hover);
+    border-color: var(--color-header-button-border-hover);
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+    .logo-section {
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+        align-items: flex-start;  /* Neu: Logo oben-ausgerichtet statt center */
+        justify-self: start;
+        padding-top: 0.5rem;  /* Extra Lift nach oben */
+    }
+
+    .logo {
+        height: 90px;  /* Etwas größer/höher – passe an (z.B. 100px) */
+        width: auto;
+        object-fit: contain;
+        margin: 0;
+    }
+
+    .logo-section {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .header {
+        height: 140px !important;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: 1fr;
+        gap: 1.5rem;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+
+    .title-section {
+        grid-row: 1;
+        grid-column: 2;
+        justify-self: start;
+        margin-left: 2rem;  /* ← Hier der Push rechts */
+        max-width: 70%;
+    }
+
+    .right-section {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .graffiti-title {
+        font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+    }
+}
+
+@media (max-width: 767px) {
+    .graffiti-title {
+        font-size: clamp(1.3rem, 4vw, 1.7rem);
+        letter-spacing: 0.1em;
+    }
 }
