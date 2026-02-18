@@ -1,8 +1,3 @@
-.lang-button {
-    position: relative;
-    min-width: 52px;
-}
-
 .lang-switcher {
     position: relative;
     display: flex;
@@ -12,13 +7,6 @@
 .lang-toggle {
     display: none !important;
     outline: none !important;
-}
-
-.lang-button .arrow {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-    transition: var(--transition-all) ease;
 }
 
 .fi {
@@ -68,16 +56,8 @@
     background: var(--color-header-button-bg);
 }
 
-/* VERBESSERTER FOCUS-FIX: Arrow bekommt KEINEN Focus-Outline */
-.lang-button:focus,
-.lang-button .arrow,
-.lang-toggle:focus + .lang-button .arrow {
+.lang-toggle:focus + .nav-button .arrow {
     outline: none !important;
-}
-
-.lang-button:focus-visible {
-    box-shadow: var(--button-shadow-lang-focus);
-    outline-offset: 2px;
 }
 
 #lang-toggle:checked + .lang-button .arrow {

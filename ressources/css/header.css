@@ -2,6 +2,7 @@
 @import "header-headline.css";
 @import "navigation.css";
 @import "navigation-mobile.css";
+@import "lang-switcher.css";
 
 .header {
     flex-shrink: 0;
