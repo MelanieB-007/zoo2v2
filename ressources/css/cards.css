@@ -39,6 +39,13 @@
     object-fit: contain;
 }
 
+.tier-card-color-variant {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 /* Fallback emoji if no image is provided */
 .tier-card__image-wrapper:not(:has(img[src])) {
     font-size: 3.5rem;
@@ -235,6 +242,174 @@
     align-items: center;
     justify-content: center;
     border: 2px solid white;
+}
+
+/* --- Accordion --- */
+.acc-item {
+    background-color: #ffffff;
+    border: 1px solid #e0eecc;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.acc-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #2a6e00;
+    text-align: left;
+}
+
+.acc-header:hover {
+    background-color: #f0f7e6;
+}
+
+.acc-chevron {
+    margin-left: auto;
+    font-size: 0.7rem;
+    transition: transform 0.2s ease;
+    color: #888;
+}
+
+.acc-header.open .acc-chevron {
+    transform: rotate(180deg);
+}
+
+.acc-body {
+    display: none;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem 0.75rem;
+    border-top: 1px solid #e0eecc;
+}
+
+.acc-body.acc-body--open {
+    display: flex;
+}
+
+/* --- Info Rows --- */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.35rem 0;
+    font-size: 0.88rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-row-label {
+    color: #888;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+}
+
+.info-row-value {
+    font-weight: 600;
+    color: #333;
+}
+
+/* --- XP Table --- */
+.xp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+}
+
+.xp-table th {
+    text-align: left;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #888;
+    padding: 0.3rem 0.5rem 0.5rem;
+    border-bottom: 1px solid #e0eecc;
+}
+
+.xp-table td {
+    padding: 0.45rem 0.5rem;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.xp-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.xp-table tbody tr:hover {
+    background-color: #f7fbf0;
+}
+
+.xp-star {
+    color: #f5c842;
+}
+
+/* --- Farbvarianten --- */
+.variants-section h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2a6e00;
+    margin: 0 0 0.75rem;
+}
+
+.variants-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.variant-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    background-color: #ffffff;
+    border: 1px solid #e0eecc;
+    border-radius: 12px;
+    padding: 0.6rem 0.75rem;
+    min-width: 90px;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.variant-card:hover {
+    box-shadow: 0 4px 12px rgba(100, 180, 60, 0.2);
+    transform: translateY(-2px);
+}
+
+.variant-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.variant-name {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.variant-date {
+    font-size: 0.7rem;
+    color: #aaa;
 }
 
 /* --- Responsive --- */

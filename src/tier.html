@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.3.2/css/flag-icons.min.css">
         <script src="../ressources/js/navigation.js" defer></script>
         <script src="../ressources/js/lang-switcher.js" defer></script>
+        <script src="../ressources/js/accordeon.js" defer></script>
     </head>
     <body>
         <header class="header container">
@@ -242,6 +243,123 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Zucht -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="toggle(this)">
+                    <span class="acc-header-icon">🐣</span>
+                    Zucht
+                    <span class="acc-chevron">▼</span>
+                </button>
+                <div class="acc-body">
+                    <div class="info-row">
+                        <span class="info-row-label">Stalllevel</span>
+                        <span class="info-row-value">🏠 1</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-row-label">Kosten</span>
+                        <span class="info-row-value"><span>😊</span>4.800</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-row-label">Dauer</span>
+                        <span class="info-row-value">⏱ 12 h</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-row-label">Startprozentsatz</span>
+                        <span class="info-row-value">3 %</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- XP & Aktionen -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="toggle(this)">
+                    <span class="acc-header-icon">⭐</span>
+                    XP & Aktionen
+                    <span class="acc-chevron">▼</span>
+                </button>
+                <div class="acc-body">
+                    <table class="xp-table">
+                        <thead>
+                        <tr>
+                            <th>Aktion</th>
+                            <th>Dauer</th>
+                            <th>XP</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>🍎 Füttern</td>
+                            <td>10 h 13 min</td>
+                            <td>243 <span class="xp-star">★</span></td>
+                        </tr>
+                        <tr>
+                            <td>🎮 Spielen</td>
+                            <td>05 h 04 min</td>
+                            <td>121 <span class="xp-star">★</span></td>
+                        </tr>
+                        <tr>
+                            <td>🧹 Putzen</td>
+                            <td>15 h 19 min</td>
+                            <td>363 <span class="xp-star">★</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Anzahl Tiere pro Gehege -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="toggle(this)">
+                    <span class="acc-header-icon">🐾</span>
+                    Anzahl Tiere pro Gehege
+                    <span class="acc-chevron">▼</span>
+                </button>
+                <div class="acc-body">
+                    <table class="xp-table">
+                        <thead>
+                        <tr>
+                            <th>Tiere</th>
+                            <th>Gehegegröße</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>1</td><td>9</td></tr>
+                        <tr><td>2</td><td>9</td></tr>
+                        <tr><td>3</td><td>12</td></tr>
+                        <tr><td>4</td><td>16</td></tr>
+                        <tr><td>5</td><td>20</td></tr>
+                        <tr><td>6</td><td>24</td></tr>
+                        <tr><td>7</td><td>28</td></tr>
+                        <tr><td>8</td><td>32</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ── FARBVARIANTEN ── -->
+            <div class="variants-section">
+                <h2>🎨 Farbvarianten</h2>
+                <div class="variants-grid">
+                    <!-- Weiss -->
+                    <div class="variant-card">
+                        <div class="variant-img" style="background:linear-gradient(135deg,#c8813a,#8a5015);">
+                            <img class="tier-card-color-variant" src="../ressources/images/farbvarianten/achal-tekkiner-weiss.jpg" alt="Achal-Tekkiner weiß">
+                        </div>
+                        <span class="variant-name">Weiß</span>
+                        <span class="variant-date">17.06.2024</span>
+                    </div>
+                    <!-- Schwarz -->
+                    <div class="variant-card">
+                        <div class="variant-img black-horse">
+                            <img class="tier-card-color-variant" src="../ressources/images/farbvarianten/achal-tekkiner-schwarz.jpg" alt="Achal-Tekkiner schwarz">
+                        </div>
+                        <span class="variant-name">Schwarz</span>
+                        <span class="variant-date">17.06.2024</span>
+                    </div>
+                </div>
+            </div>
+
         </main>
 
         <footer class="footer container">
