@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const flagMap = {
         'de': 'de',
         'en': 'gb',
-        'fr': 'fr'
+        'nl': 'nl',
+        'be' : 'be',
+        'dk' : 'dk'
     };
 
     // ===== INITIAL: SPRACHE LADEN =====
