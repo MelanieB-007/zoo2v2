@@ -1,5 +1,6 @@
 @import "main.css";
 @import "header.css";
+@import "breadcrumb.css";
 @import "footer.css";
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 
@@ -100,4 +101,11 @@ body {
     font-family: system-ui, sans-serif;
     position: relative;
     z-index: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

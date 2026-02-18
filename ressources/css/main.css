@@ -50,6 +50,6 @@
         padding: 1.5rem 1rem;
         margin: 8px auto;
         min-height: auto;
-        border-radius: 0;
+        border-radius: var(--border-radius);
     }
 }
