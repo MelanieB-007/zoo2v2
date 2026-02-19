@@ -294,6 +294,64 @@
     display: flex;
 }
 
+.tier-detail-layout {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.tier-description-card {
+    flex: 1;             /* füllt den verbleibenden Platz nach den Farbvarianten */
+    background-color: #ffffff;
+    border: 1px solid #e0eecc;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-height: 170px;
+}
+
+.tier-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;        /* nimmt die volle Grid-Zellen-Höhe ein */
+    position: sticky;
+    top: 1rem;
+}
+
+.tier-description-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #2a6e00;
+    margin: 0;
+}
+
+.tier-description-text {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.tier-accordeons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .tier-detail-layout {
+        grid-template-columns: 1fr;
+    }
+    .tier-description-card {
+        position: static;
+    }
+}
+
 /* --- Info Rows --- */
 .info-row {
     display: flex;

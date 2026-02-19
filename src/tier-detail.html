@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Tier</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junior Web Developer | React, JavaScript, Zoo-Quiz Creator | Tornesch">
+    <link rel="stylesheet" href="../ressources/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.3.2/css/flag-icons.min.css">
+    <script src="../ressources/js/navigation.js" defer></script>
+    <script src="../ressources/js/lang-switcher.js" defer></script>
+    <script src="../ressources/js/accordeon.js" defer></script>
+</head>
+<body>
+<header class="header container">
+    <div class="logo-section">
+        <img class="logo" src="../ressources/images/logo.png" alt="Logo Klub der tollen Tiere"/>
+    </div>
+    <div class="title-section">
+        <h1 class="graffiti-title">Klub der tollen Tiere</h1>
+    </div>
+    <nav class="desktop-nav">
+        <ul>
+            <li class="nav-item">
+                <a href="#home" class="nav-link">
+                    Home
+                    <svg class="arrow" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <input type="checkbox" id="nav-toggle-zoo" class="nav-toggle">
+                <label for="nav-toggle-zoo" class="nav-button">
+                    Zoo
+                    <svg class="arrow" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </label>
+                <ul class="nav-dropdown">
+                    <li><a href="#" class="nav-option">Zoo Gebiete</a></li>
+                    <li><a href="#" class="nav-option">Zoo Gehege</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <input type="checkbox" id="nav-toggle-tiere" class="nav-toggle">
+                <label for="nav-toggle-tiere" class="header-button nav-button">
+                    Tiere
+                    <svg class="arrow" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </label>
+                <ul class="nav-dropdown">
+                    <li><a href="#" class="nav-option">Tierübersicht</a></li>
+                    <li><a href="#" class="nav-option">Tier anlegen</a></li>
+                    <li><a href="#" class="nav-option">Tier bearbeiten</a></li>
+                    <li><a href="#" class="nav-option">Farbvarianten</a></li>
+                    <li><a href="#" class="nav-option">Farbvariante anlegen</a></li>
+                    <li><a href="#" class="nav-option">Farbvariante bearbeiten</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <input type="checkbox" id="nav-toggle-klub" class="nav-toggle">
+                <label for="nav-toggle-klub" class="header-button nav-button">
+                    Klub
+                    <svg class="arrow" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </label>
+                <ul class="nav-dropdown">
+                    <li><a href="#" class="nav-option">Mitglieder</a></li>
+                    <li><a href="#" class="nav-option">Wettbewerbe</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="right-section">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <button class="nav-link">Login</button>
+
+        <div class="lang-switcher">
+            <input type="checkbox" id="lang-toggle" class="lang-toggle">
+            <label for="lang-toggle" class="lang-button nav-button">
+                <span class="fi fi-de"></span>
+                <svg class="arrow" viewBox="0 0 24 24" fill="currentColor" focusable="false">
+                    <path d="M7 10l5 5 5-5z"/>
+                </svg>
+            </label>
+            <div class="lang-dropdown">
+                <div class="lang-option active" data-lang="de">
+                    <span class="fi fi-de"></span>
+                </div>
+                <div class="lang-option" data-lang="en">
+                    <span class="fi fi-gb"></span>
+                </div>
+                <div class="lang-option" data-lang="nl">
+                    <span class="fi fi-nl"></span>
+                </div>
+                <div class="lang-option" data-lang="be">
+                    <span class="fi fi-be"></span>
+                </div>
+                <div class="lang-option" data-lang="dk">
+                    <span class="fi fi-dk"></span>
+                </div>
+            </div>
+        </div>
+
+        <label for="menu-toggle" class="hamburger nav-button" aria-label="Menü öffnen/schließen">☰</label>
+        <nav class="mobile-nav">
+            <label for="menu-toggle" class="close-btn" aria-label="Menü schließen">&times;</label>
+            <ul>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">
+                        Home
+                        <svg class="arrow" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7 10l5 5 5-5z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <input type="checkbox" id="nav-toggle-zoo-mobile" class="nav-toggle">
+                    <label for="nav-toggle-zoo-mobile" class="nav-button">
+                        Zoo
+                        <svg class="arrow" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7 10l5 5 5-5z"/>
+                        </svg>
+                    </label>
+                    <ul class="nav-dropdown">
+                        <li><a href="#" class="nav-option">Zoo Gebiete</a></li>
+                        <li><a href="#" class="nav-option">Zoo Gehege</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <input type="checkbox" id="nav-toggle-tiere-mobile" class="nav-toggle">
+                    <label for="nav-toggle-tiere-mobile" class="header-button nav-button">
+                        Tiere
+                        <svg class="arrow" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7 10l5 5 5-5z"/>
+                        </svg>
+                    </label>
+                    <ul class="nav-dropdown">
+                        <li><a href="#" class="nav-option">Tierübersicht</a></li>
+                        <li><a href="#" class="nav-option">Tier anlegen</a></li>
+                        <li><a href="#" class="nav-option">Tier bearbeiten</a></li>
+                        <li><a href="#" class="nav-option">Farbvarianten</a></li>
+                        <li><a href="#" class="nav-option">Farbvariante anlegen</a></li>
+                        <li><a href="#" class="nav-option">Farbvariante bearbeiten</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <input type="checkbox" id="nav-toggle-klub-mobile" class="nav-toggle">
+                    <label for="nav-toggle-klub-mobile" class="header-button nav-button">
+                        Klub
+                        <svg class="arrow" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7 10l5 5 5-5z"/>
+                        </svg>
+                    </label>
+                    <ul class="nav-dropdown">
+                        <li><a href="#" class="nav-option">Mitglieder</a></li>
+                        <li><a href="#" class="nav-option">Wettbewerbe</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--        <nav aria-label="Breadcrumb" class="breadcrumb container">-->
+<!--            <ul>-->
+<!--                <li><a href="#">Home</a></li>-->
+<!--                <li><a href="#">Tiere</a></li>-->
+<!--                <li aria-current="page">Tier</li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<main class="main container">
+    <!-- Einfügen in <main class="main container"> -->
+
+    <div class="tier-card">
+        <div class="tier-card__left">
+            <div class="tier-card__image-wrapper">
+                <img class="tier-card__image" src="../ressources/images/tiere/gras/achal-tekkiner.jpg" alt="Achal-Tekkiner">
+            </div>
+
+        </div>
+
+        <div class="tier-card__body">
+            <div class="tier-card__header">
+                <div class="tier-card__header-content">
+                    <h2 class="tier-card__name">Achal-Tekkiner</h2>
+                    <p class="tier-card__latin">Akhal-Teke</p>
+                    <p class="tier-card__release">📅 Release: 17.06.2024</p>
+                </div>
+                <img
+                        class="img-herkunft"
+                        src="../ressources/images/herkunft/academy.webp"
+                        alt="Herkunft Academy"
+                        title="Academy">
+            </div>
+
+            <div class="tier-card__bottom">
+                <div class="tier-card__stats">
+                    <div class="tier-card__stat-box">
+                        <span class="tier-card__stat-label">Preis</span>
+                        <span class="tier-card__stat-value">
+                                    80
+                                    <img class="img-diamonds" src="../ressources/images/preisarten/diamant.webp" alt="Diamanten">
+                                </span>
+                    </div>
+                    <div class="tier-card__stat-box">
+                        <span class="tier-card__stat-label">Verkaufswert</span>
+                        <span class="tier-card__stat-value">
+                                    8.000
+                                    <img class="img-zoodollar" src="../ressources/images/preisarten/zoodollar.webp" alt="Zoodollar">
+                                </span>
+                    </div>
+                    <div class="tier-card__stat-box">
+                        <span class="tier-card__stat-label">Popularität</span>
+                        <span class="tier-card__stat-value">
+                                      800
+                                <img class="img-popularity" src="../ressources/images/besucher.jpg" alt="Popularity">
+                                </span>
+                    </div>
+                    <div class="tier-card__stat-box">
+                        <span class="tier-card__stat-label">Auswildern</span>
+                        <span class="tier-card__stat-value">
+                                    800
+                                    <img class="img-star" src="../ressources/images/stern.jpg" alt="Stern">
+                                </span>
+                    </div>
+                </div>
+
+                <div class="tier-card__gehege-box">
+                    <span class="tier-card__stat-label">Gehege</span>
+                    <div class="tier-card__gehege-images">
+                        <img class="tier-card__gehege-img" src="../ressources/images/gehege/gras.webp" alt="Gehege">
+                        <div class="gehege-img-wrapper">
+                            <img class="tier-card__gehege-img" src="../ressources/images/gehege/gras/stall.png" alt="Stall">
+                            <span class="gehege-badge">2</span>
+                        </div>
+                        <img class="tier-card__gehege-img" src="../ressources/images/gehege/gras/erdloch.png" alt="Gehege">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zweispaltiges Layout: Beschreibung + Akkordeons -->
+    <div class="tier-detail-layout">
+
+        <!-- Linke Spalte: Beschreibung -->
+        <div class="tier-left-column">
+            <div class="tier-description-card">
+                <h3 class="tier-description-title">📖 Beschreibung</h3>
+                <p class="tier-description-text">
+                    Der Achal-Tekkiner ist eine der ältesten Pferderassen der Welt und stammt aus Turkmenistan.
+                    Er ist bekannt für sein glänzendes, goldenes Fell und seine außergewöhnliche Ausdauer in
+                    extremen Klimabedingungen.
+                </p>
+            </div>
+            <!-- ── FARBVARIANTEN ── -->
+            <div class="variants-section">
+                <h2>🎨 Farbvarianten</h2>
+                <div class="variants-grid">
+                    <!-- Weiss -->
+                    <div class="variant-card">
+                        <div class="variant-img" style="background:linear-gradient(135deg,#c8813a,#8a5015);">
+                            <img class="tier-card-color-variant" src="../ressources/images/farbvarianten/achal-tekkiner-weiss.jpg" alt="Achal-Tekkiner weiß">
+                        </div>
+                        <span class="variant-name">Weiß</span>
+                        <span class="variant-date">17.06.2024</span>
+                    </div>
+                    <!-- Schwarz -->
+                    <div class="variant-card">
+                        <div class="variant-img black-horse">
+                            <img class="tier-card-color-variant" src="../ressources/images/farbvarianten/achal-tekkiner-schwarz.jpg" alt="Achal-Tekkiner schwarz">
+                        </div>
+                        <span class="variant-name">Schwarz</span>
+                        <span class="variant-date">17.06.2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rechte Spalte: Akkordeons -->
+        <div class="tier-accordeons">
+
+            <!-- Zucht -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="toggle(this)">
+                    <span class="acc-header-icon">🐣</span>
+                    Zucht
+                    <span class="acc-chevron">▼</span>
+                </button>
+                <div class="acc-body">
+                    <div class="info-row">
+                        <span class="info-row-label">Stalllevel</span>
+                        <span class="info-row-value">🏠 1</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-row-label">Kosten</span>
+                        <span class="info-row-value">😊 4.800</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-row-label">Dauer</span>
+                        <span class="info-row-value">⏱ 12 h</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-row-label">Startprozentsatz</span>
+                        <span class="info-row-value">3 %</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- XP & Aktionen -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="toggle(this)">
+                    <span class="acc-header-icon">⭐</span>
+                    XP & Aktionen
+                    <span class="acc-chevron">▼</span>
+                </button>
+                <div class="acc-body">
+                    <table class="xp-table">
+                        <thead>
+                        <tr>
+                            <th>Aktion</th>
+                            <th>Dauer</th>
+                            <th>XP</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>🍎 Füttern</td>
+                            <td>10 h 13 min</td>
+                            <td>243 <span class="xp-star">★</span></td>
+                        </tr>
+                        <tr>
+                            <td>🎮 Spielen</td>
+                            <td>05 h 04 min</td>
+                            <td>121 <span class="xp-star">★</span></td>
+                        </tr>
+                        <tr>
+                            <td>🧹 Putzen</td>
+                            <td>15 h 19 min</td>
+                            <td>363 <span class="xp-star">★</span></td>
+                        </tr>
+                        <tr>
+                            <td>🦅 Auswilderung</td>
+                            <td>–</td>
+                            <td>800 <span class="xp-star">★</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Anzahl Tiere pro Gehege -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="toggle(this)">
+                    <span class="acc-header-icon">🐾</span>
+                    Anzahl Tiere pro Gehege
+                    <span class="acc-chevron">▼</span>
+                </button>
+                <div class="acc-body">
+                    <table class="xp-table">
+                        <thead>
+                        <tr>
+                            <th>Tiere</th>
+                            <th>Gehegegröße</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>1</td><td>9</td></tr>
+                        <tr><td>2</td><td>9</td></tr>
+                        <tr><td>3</td><td>12</td></tr>
+                        <tr><td>4</td><td>16</td></tr>
+                        <tr><td>5</td><td>20</td></tr>
+                        <tr><td>6</td><td>24</td></tr>
+                        <tr><td>7</td><td>28</td></tr>
+                        <tr><td>8</td><td>32</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</main>
+
+<footer class="footer container">
+</footer>
+</body>
+</html>
