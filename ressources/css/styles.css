@@ -19,6 +19,9 @@
     --color-orange: #ff8c00;
     --color-orange-dark: #e67e22;
     --color-green: #68B300;
+    --text-muted: #888;
+    --text: #222;
+
 
     /* Allgemein */
     --transition-all: all 0.3s;

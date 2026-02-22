@@ -1,5 +1,7 @@
 @import "cards.css";
 @import "breadcrumb.css";
+@import "animal-overview.css";
+@import "animal-create.css";
 
 .container {
     max-width: var(--width-page);
